@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/dist/traductorLeet/translate_leet.js"></script>
+</head>
+<body>
+    <div class="container" id="translate">
+        <h1>DAY 1</h1>
+        <p>Escribe un programa que reciba un texto y transforme lenguaje natural a
+            "lenguaje hacker" (conocido realmente como "leet" o "1337"). Este lenguaje
+            se caracteriza por sustituir caracteres alfanuméricos.
+            Utiliza esta tabla (https://www.gamehouse.com/blog/leet-speak-cheat-sheet/) 
+            con el alfabeto y los números en "leet".
+            (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")</p>
+            <form id="translator">
+                <label class="label" for="toTranslate">Palabra a traducir</label><br>
+                <input type="text" id="toTranslate" name="toTranslate"><br>
+                <button type="button" id="btnSubmit">Translate</button>
+            </form>
+            <p id="txt"></p>
+    </div>
+</body>
+</html>
