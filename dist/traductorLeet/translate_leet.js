@@ -17,11 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const toTranslateInput = document.getElementById('toTranslate');
     const translateButton = document.getElementById('btnSubmit');
     const resultParagraph = document.getElementById('txt');
+    const home = document.getElementById('home');
     translateButton.addEventListener('click', (event) => {
         event.preventDefault();
         const textToTranslate = toTranslateInput.value.toLowerCase();
         const translatedText = translate(textToTranslate);
         resultParagraph.textContent = translatedText;
+    });
+    home.addEventListener('click', (event) => {
+        window.location.href = '../index.html';
     });
 });
 //# sourceMappingURL=translate_leet.js.map

@@ -18,11 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const toTranslateInput = document.getElementById('toTranslate') as HTMLInputElement;
     const translateButton = document.getElementById('btnSubmit') as HTMLButtonElement;
     const resultParagraph = document.getElementById('txt') as HTMLParagraphElement;
+    const home = document.getElementById('home') as HTMLButtonElement;
 
     translateButton.addEventListener('click', (event) => {
         event.preventDefault();
         const textToTranslate = toTranslateInput.value.toLowerCase();
         const translatedText = translate(textToTranslate);
         resultParagraph.textContent = translatedText;
+    });
+
+    home.addEventListener('click', (event) => {
+        window.location.href = '../index.html';
     });
 });
