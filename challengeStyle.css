@@ -20,9 +20,12 @@ body {
 form{
     padding: 10px;
     width: 500px;
+}
+.checkbox-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 input[type="text"]{
     padding: 10px;
@@ -39,4 +42,11 @@ button{
     margin-bottom: 10px;
     margin-left: 5px;
     cursor: pointer;
+}
+
+.slidecontainer {
+    display: flex;
+}
+label{
+    padding-left: 10px;
 }

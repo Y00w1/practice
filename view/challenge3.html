@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2</title>
+    <link rel="stylesheet" href="../challengeStyle.css">
+    <script src="/dist/challenge3/password.js"></script>
+</head>
+<body>
+    <div class="container" id="passwordGenerator">
+        <h1>DAY 3</h1>
+        <p>
+            Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.<br>
+            Podrás configurar generar contraseñas con los siguientes parámetros:<br>
+            - Longitud: Entre 8 y 16.<br>
+            - Con o sin letras mayúsculas.<br>
+            - Con o sin números.<br>
+            - Con o sin símbolos.<br>
+            (Pudiendo combinar todos estos parámetros entre ellos)<br>
+        </p>
+            <form id="passwordOptions">
+                <div class="slidecontainer">
+                    <input type="range" min="8" max="16" value="12" class="slider" id="range">
+                    <label id="rangeValue">12</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="uppercase" name="uppercase" value="Uppercase">
+                    <label for="uppercase">  Con mayúsculas</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="numbers" name="numbers" value="Numbers">
+                    <label for="numbers">  Con números</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="symbols" name="symbols" value="Symbols">
+                    <label for="symbols">  Con símbolos</label>
+                </div>
+                <button id="btnGenerate">Generar</button>
+            </form>
+            <p id="password"></p>
+            <br>
+            <button id="home">Home</button>
+    </div>
+</body>
+</html>
