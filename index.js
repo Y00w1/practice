@@ -16,4 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     challenge4.addEventListener('click', (event) => {
         window.location.href = './view/challenge4.html';
     });
+    challenge5.addEventListener('click', (event) => {
+        window.location.href = './view/challenge5.html';
+    });
 });

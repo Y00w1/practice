@@ -50,3 +50,9 @@ button{
 label{
     padding-left: 10px;
 }
+#options button {
+    border-radius: 5px;
+    padding: 0; 
+    cursor: pointer;
+}
+
