@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const challenge2 = document.getElementById('challenge2');
     const challenge3 = document.getElementById('challenge3');
     const challenge4 = document.getElementById('challenge4');
+    const challenge5 = document.getElementById('challenge5');
+    const challenge6 = document.getElementById('challenge6');
+
     challenge1.addEventListener('click', (event) => {
         event.preventDefault();
         window.location.href = './view/challenge1.html';
@@ -18,5 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     challenge5.addEventListener('click', (event) => {
         window.location.href = './view/challenge5.html';
+    });
+    challenge6.addEventListener('click', (event) => {
+        window.location.href = './view/challenge6.html';
     });
 });
